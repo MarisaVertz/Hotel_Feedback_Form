@@ -1,7 +1,7 @@
 <h1>Hotel Feedback Form</h1>
 <p>In this project we had to create a form using HTML properties.</p>
 <a href="https://marisavertz.github.io/Hotel_Feedback_Form/">
-  <img src="https://raw.githubusercontent.com/MarisaVertz/Cat_Blog/refs/heads/main/images/cat-blog-screenshot.png" width="500">
+  <img src="https://raw.githubusercontent.com/MarisaVertz/Hotel_Feedback_Form/refs/heads/main/hotel_form_screenshot.png" width="500">
 </a>
 <br><br>
 <a href="https://marisavertz.github.io/Hotel_Feedback_Form/">
