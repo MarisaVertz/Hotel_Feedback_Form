@@ -57,6 +57,12 @@ form {
   gap: 1.5rem;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.8rem; /* or smaller, like 0.8rem */
+  color: #777;       /* optional: softer color */
+}
+
 fieldset {
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -248,6 +254,11 @@ select:focus {
 
   legend {
     font-size: 0.96rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 0.75rem;
   }
 
   label,
