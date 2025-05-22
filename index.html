@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Feedback Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <h1>Hotel Feedback Form</h1>
+            <p class="centered">Thank you for staying with us. Please provide feedback on your recent stay.</p>
+            <hr>
+        </header>
+        <main>
+            <form method="POST" action="https://formspree.io/f/mbloedan">
+                
+                    <div class="form-row">
+                        <label for="full-name">Name (required):</label>
+                        <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required>
+                    </div>  
+                    <div class="form-row-two">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group age-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age">
+                        </div>
+                    </div>
+                <fieldset>
+                    <legend>Was this your first time at our hotel?</legend>
+                    <input id="yes-option" type="radio" name="hotel-stay" /><label for="yes-option">Yes</label><br>
+                    <input id="no-option" type="radio" name="hotel-stay" /><label for="no-option">No</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+                    
+                    <input type="checkbox" id="ads" name="ads" value="ads" /><label for="ads">Social Media Ads</label><br>
+                    <input type="checkbox" id="recommendation" name="recommendation" value="recommendation"/><label for="recommendation">Personal Recommendation</label><br>
+                    <input type="checkbox" id="location" name="location" value="location" /><label for="location">Location</label><br>
+                    <input checked type="checkbox" id="reputation" name="reputation" value="reputation" /><label for="reputation">Reputation</label><br>
+                    <input type="checkbox" id="price" name="price" value="price" /><label for="price">Price</label><br>
+                </fieldset>
+               
+                <fieldset>
+                    <legend>Ratings</legend>
+                    <label for="service">How was the service?</label>
+                    <select name="service" id="service">
+                        <option value="poor">Poor</option>
+                        <option value="satisfactory">Satisfactory</option>
+                        <option value="good">Good</option>
+                        <option value="very-good">Very Good</option>
+                        <option selected value="excellent">Excellent</option>
+                    </select><br><br>
+                    <label for="food">How was the food?</label>
+                    <select name="food" id="food">
+                        <option value="poor">Poor</option>
+                        <option value="satisfactory">Satisfactory</option>
+                        <option value="good">Good</option>
+                        <option value="very-good">Very Good</option>
+                        <option selected value="excellent">Excellent</option>
+                    </select>
+                </fieldset>
+                <h3>Other Comments?</h3>
+                <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        </div>
+    </body>
+</html>
